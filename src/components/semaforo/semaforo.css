@@ -1,0 +1,43 @@
+.semaforo {
+  display: grid;
+  gap: 12px;
+  width: fit-content;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: #171717;
+}
+
+.luz {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #3b3b3b;
+}
+
+.luz.rojo {
+  background-color: #ef4444;
+}
+
+.luz.ambar {
+  background-color: #f59e0b;
+}
+
+.luz.verde {
+  background-color: #22c55e;
+}
+
+.luz.parpadeo {
+  animation: parpadear 1s step-end infinite;
+}
+
+@keyframes parpadear {
+  50% {
+    background-color: #3b3b3b;
+  }
+}
+
+.semaforo-botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
